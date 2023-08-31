@@ -8,7 +8,7 @@
        $op = $x % $y;
       echo "$x % $y = $op<br>";
      }
-     mod($x,$y);
+    
      function power(int $x,int $y)
      {
           $z=$x**$y;
@@ -30,8 +30,6 @@
              }  
              echo "Factorial of $num is $factorial";       
      }
-     power($x,$y);
-     sum($n);
-     fact($y);
+     
 ?>
 
