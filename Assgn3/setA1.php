@@ -6,7 +6,7 @@
      function mod(int $x,int $y)
      {
        $op = $x % $y;
-      echo "$x % $y = $op<br>";
+       echo "$x % $y = $op<br>";
      }
     
      function power(int $x,int $y)
