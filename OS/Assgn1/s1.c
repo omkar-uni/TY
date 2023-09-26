@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<sys/types.h>
+#include<unistd.h>
 void cp(void);
 void pp(void);
 int main()
