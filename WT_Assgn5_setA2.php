@@ -1,6 +1,6 @@
 <?php
 	$et=$_GET['t1'];
-	$con=pg_connect("host=192.168.1.254 dbname=ty56 user=ty56 password=ty56");
+	$con=pg_connect("host=192.168.1.254 dbname=ty68 user=ty68 password=ty68");
 	if ($con)
 		echo "DataBase Connected <br>";
 	else
@@ -15,7 +15,7 @@
 		INSERT INTO EVENT VALUES(3,'Sports Day','12/12/23');
 		
 		insert into COMMITTEE values(11,'TCS','SHUKLA',5,'WORKING',8);
-		insert into COMMITTEE values(22,'INFOSYS','MehtA',4,'WORKING',7);
+		insert into COMMITTEE values(22,'INFOSYS','Mehta',4,'WORKING',7);
 		insert into COMMITTEE values(33,'INFOSYS','Omkar',6,'NON-WORKING',8);
 		
 		
@@ -33,10 +33,6 @@
 		echo "Records Created Successfully!<br>";
 	$q1="update COMMITTEE c set status='WORKING' where cno=(select c.cno from EC,event e, committee c where e.eno=EC.eno and c.cno=EC.cno and e.title='Sports Day');";
 	$updateSql=pg_query($q1);
-	$ret=pq_query($con,$updateSql);
-	if (!$ret)
-		echo pg_last_error($con);
-	else
-		echo "Status updated SUccessfully";
+	echo "Status updated SUccessfully";
 	pg_close($con);
 ?>
