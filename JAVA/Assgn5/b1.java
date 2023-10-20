@@ -25,7 +25,7 @@ class b1 extends JFrame implements ActionListener {
 		p2 = new JPanel();
 		b = new JButton("Clear");
 		b.addActionListener(this);
-                JComboBox jcb = new JComboBox(font,size);
+                JComboBox jcb = new JComboBox(font);
                 //JComboBox siz = new JComboBox(size);
 		r1 = new JRadioButton("FY");
 		r2 = new JRadioButton("SY");
