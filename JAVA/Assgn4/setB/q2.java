@@ -7,7 +7,7 @@ class q2
     String username,password;
     q2()
     {
-        username="varad";
+        username="omkar";
         password="1234";
     }
     q2(String user,String pass)
